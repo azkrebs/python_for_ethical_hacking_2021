@@ -41,3 +41,5 @@ except KeyboardInterrupt:
     print("\n[-] Detected CTRL + C ...... Resetting ARP Tables...... Please Wait\n") #"\n" ends the line and starts a new one
     restore(target_ip, gateway_ip) #this line and line below call the restore function
     restore(gateway_ip, target_ip)
+    
+#must type "echo 1 > /proc/sys/net/ipv4/ip_forward" in terminal in order for the responses and requests to flow through your computer
