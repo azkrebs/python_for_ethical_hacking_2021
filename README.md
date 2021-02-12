@@ -6,3 +6,4 @@
 # also need to use: iptables --flush | when switching between remote machine and your own
 # iptables for remote machine: iptables -I FORWARD -j NFQUEUE —queue-num 0
 # to enable my own html: service apache2 start
+# to bypass https execute command: sslstrip
